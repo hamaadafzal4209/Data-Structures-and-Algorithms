@@ -3,10 +3,9 @@ public:
     int finalValueAfterOperations(vector<string>& operations) {
         int x = 0;
         for (int i = 0; i < operations.size(); i++) {
-            string op = operations[i];
-            if (op == "X++" || op == "++X") {
+            if (operations[i] == "X++" || operations[i] == "++X") {
                 x++;
-            } else if (op == "X--" || op == "--X") {
+            } else if (operations[i] == "X--" || operations[i] == "--X") {
                 x--;
             }
         }
